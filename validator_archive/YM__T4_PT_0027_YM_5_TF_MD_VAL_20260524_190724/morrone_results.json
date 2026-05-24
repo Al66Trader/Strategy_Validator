@@ -1,0 +1,75 @@
+{
+  "n_passed": 5,
+  "tests": {
+    "ttest": {
+      "name": "T-Statistic",
+      "value": 5.12,
+      "soglia": 1.96,
+      "extra": "P-value = 0.0000",
+      "formula": "T = Sharpe × √anni",
+      "passed": true
+    },
+    "emsr": {
+      "name": "Sharpe IS > E[MaxSR]",
+      "value": 1.37,
+      "soglia": 0.791,
+      "extra": "SR casuale con N=367: 0.791",
+      "formula": "E[MaxSR] = f(N, T)",
+      "passed": true
+    },
+    "minbtl": {
+      "name": "Anni IS >= MinBTL",
+      "value": 14.0,
+      "soglia": 8.8,
+      "extra": "Minimi per N=367: 8.8",
+      "formula": "MinBTL = f(N)",
+      "passed": true
+    },
+    "bonferroni": {
+      "name": "T-stat > Bonferroni",
+      "value": 5.12,
+      "soglia": 3.81,
+      "extra": "α aggiustato = 0.05/367 = 0.00014",
+      "formula": "α_bonf = α / N",
+      "passed": true
+    },
+    "dsr": {
+      "name": "DSR > soglia",
+      "value": 0.989,
+      "soglia": 0.95,
+      "extra": "Corregge per N, Skew=0.92, Kurt=2.21",
+      "formula": "DSR = Φ(z)",
+      "passed": true
+    }
+  },
+  "metrics_is": {
+    "label": "IS",
+    "n_trades": 1064,
+    "years": 13.973990417522245,
+    "tpy": 76.14145768025078,
+    "sharpe": 1.3696007057428456,
+    "cagr": 0.07016937334568785,
+    "max_dd": -0.044439440003002664,
+    "profit_factor": 1.532387435966568,
+    "win_rate": 0.4906015037593985,
+    "avg_trade": 148.46804511278197,
+    "final_equity": 257970.0,
+    "skewness": 0.920231540816758,
+    "kurtosis": 2.212292925909609
+  },
+  "metrics_oos": {
+    "label": "OOS",
+    "n_trades": 199,
+    "years": 2.3381245722108144,
+    "tpy": 85.11094847775176,
+    "sharpe": 0.194803814401482,
+    "cagr": 0.5126898400203563,
+    "max_dd": -0.07119711137857605,
+    "profit_factor": 1.0549508334647946,
+    "win_rate": 0.27638190954773867,
+    "avg_trade": 26.256281407035175,
+    "final_equity": 263195.0,
+    "skewness": 2.012387427261286,
+    "kurtosis": 5.489800637717108
+  }
+}

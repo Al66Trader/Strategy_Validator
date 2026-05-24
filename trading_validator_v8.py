@@ -1794,7 +1794,7 @@ with tab_m:
                 df_oos["return_pct"]  = df_oos["profit"] / df_oos["equity_prev"]
 
             m_is  = compute_metrics(df_is, initial_capital, "IS")
-            m_oos = compute_metrics(df_oos, initial_capital, "OOS") \
+            m_oos = compute_metrics(df_oos, leq, "OOS") \
                     if len(df_oos)>5 else None
             if not m_is:
                 st.error("Dati IS insufficienti."); st.stop()

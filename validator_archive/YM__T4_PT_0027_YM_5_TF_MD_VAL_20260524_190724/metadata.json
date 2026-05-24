@@ -1,0 +1,17 @@
+{
+  "id": "YM__T4_PT_0027_YM_5_TF_MD_VAL_20260524_190724",
+  "strategy_name": "@YM  T4_PT_0027_YM_5_TF_MD_VAL_TSV1 Backtesting Strategy Performance Report",
+  "instrument": "NQ Futures",
+  "initial_capital": 100000,
+  "is_end_date": "2023-12-31",
+  "n_totale": 367,
+  "alpha": 0.05,
+  "dsr_threshold": 0.95,
+  "archived_at": "2026-05-24T19:07:24.984028",
+  "has_morrone": true,
+  "has_cscv": true,
+  "verdetto": "VALIDA",
+  "n_passed": 5,
+  "pbo": 0.2937839937839938,
+  "note": ""
+}
